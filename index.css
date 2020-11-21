@@ -16,6 +16,7 @@ body {
     /* item1: flex-grow:2 ,item2: flex-grow: 4, item2-grow twice as fast; */
     justify-content:space-around; /* flex spacing around */
     color: #2f2c48;
+    max-width: 100%;
 }   
 
 .instructions {
@@ -30,6 +31,7 @@ body {
     background: #fff;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
     padding-bottom: 16px;
+    max-width: 100%;
 }
 
 .card header {
@@ -52,11 +54,13 @@ body {
 .card aside {
     padding-left: 16px;
     padding-right: 16px;
+    max-width: 100%;
 }
  
 
  .card-body{
      display: flex;
+     max-width: 100%;
  }
 
  .card-right-column {
@@ -65,6 +69,7 @@ body {
 
  canvas {
      background: #f4f8f9;
+     max-width: 100%;
  }
 
  .tileset-container {
