@@ -150,7 +150,7 @@ function exportImage() {
 }
 
 function resizeContainer() {
-    if (vw < 700) {
+    if (300 < vw < 700) {
         canvas.width = 315;
         canvas.height = 315;
         console.log((tilesetImage.width)/6)
@@ -158,8 +158,9 @@ function resizeContainer() {
         tilesetSelection.style.height = `${(tilesetImage.offsetHeight)/18}`+ "px";
         sizeOfCrop = (tilesetImage.offsetWidth)/6;
         console.log("true");
-    } else {
-
+    } 
+    else if (vw < 300) {
+        sizeOfCrop = (tilesetImage.offsetWidth)/6;
     }
 }
 
