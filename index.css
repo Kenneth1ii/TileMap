@@ -69,7 +69,8 @@ body {
 
  canvas {
      background: #f4f8f9;
-     max-width: 100%;
+     width: 100%;
+     height: auto;
  }
 
  .tileset-container {
