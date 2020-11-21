@@ -1,0 +1,136 @@
+/* universal selector Applies to all HTMl Elements */
+* { 
+    box-sizing: border-box; /* Total size set for width/height */
+}
+
+html { height: 100%;}
+
+body {
+    font-family: 'Source San Pro', sans-serif;
+    padding: 1em; /* em is multiplier of default element px size ; 1em =16px , 2em = 32px etc,scale */
+    background: linear-gradient(180deg, #fff9E4 0%, #EEEED8 100%); 
+    /* linear-gradient() CSS function creates an image consisting of a progressive transition between two 
+    or more colors along a straight line. */
+    display: flex ; /* inline block powerful when using with [WRAPPING] or justiify content spacing*/
+    /* ALSO godlike flex-items: to size proportional  flex-grow, flex shrink or Auto*/
+    /* item1: flex-grow:2 ,item2: flex-grow: 4, item2-grow twice as fast; */
+    justify-content:space-around; /* flex spacing around */
+    color: #2f2c48;
+}   
+
+.instructions {
+    font-size: 0.8 em;
+    color: #aaa;
+    text-align: center;
+    margin:0;
+    margin-bottom: 16px;
+}
+
+.card {
+    background: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    padding-bottom: 16px;
+}
+
+.card header {
+    display:flex;
+    justify-content: space-between;      
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    margin-bottom:1em;
+    padding: 16px;
+}
+
+.card header h1 {
+    margin:0;
+}
+       
+.card header .button-as-link {
+    margin-right: 1em;
+}
+    
+.card aside {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+ 
+
+ .card-body{
+     display: flex;
+ }
+
+ .card-right-column {
+     padding-right: 30px;
+ }
+
+ canvas {
+     background: #f4f8f9;
+ }
+
+ .tileset-container {
+     position: relative;
+ }
+
+ .tileset-container-selection {
+     position: absolute;
+     outline: 3px solid cyan;
+     left:0;
+     top: 0;
+     width: 32px;
+     height: 32px;
+ }
+
+ .layers {
+     list-style-type: none;
+     margin:0;
+     padding:0;
+ }
+
+ .layers button {
+     appearance: none;  /* element's appear native to OS */
+     font-family: inherit;
+     outline: 0;/*outside border*/
+     background: transparent;
+     border: 0;
+     padding: 8px 0;
+     /*border-bottom: 1px solid #ddd; */
+     display: block;
+     width: 100%;
+     text-align: left;
+     cursor: pointer;
+ }
+
+ .layers button.active{
+     font-weight: bold;
+     color: #0884f1;
+ }
+ 
+ .button-as-link{
+     appearance: none;
+     text-decoration: underline;
+     background: transparent;
+     color: #7f808e;
+     border: 0;
+     outline: 0;
+     cursor: pointer;
+ }
+
+ .primary-button {
+     border: 0;
+     background: #4e84fa;
+     border-top:4px solid transparent;
+     border-bottom: 4px solid transparent;
+     color: #fff;
+     border-radius: 6px;
+     outline: 0;
+     padding: 6px 16px;
+     cursor: pointer;
+ }
+
+ label {
+     text-transform: uppercase;
+     margin-bottom: 0.5em;
+     font-weight: bold;
+     display: block;
+ }
+
