@@ -57,6 +57,7 @@ function draw() {
             
 
                 // Oh idk.... Leave it at 32...... Size of crop Dont belong here LOL...
+                // Image passed in still same Size.. So no need change anything else.
             ctx.drawImage(
                 tilesetImage,
                 tilesheetX * 32, tilesheetY * 32, // Start position of Source (x,y)
